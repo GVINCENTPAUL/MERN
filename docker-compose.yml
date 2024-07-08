@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  server:
+    build: ./server
+    container_name: server
+    ports:
+      - "3001:3001"
+    environment: 
+      - mongodb+srv://gantavincentpaul:ImzlIz7HIYUbNcjo@cluster1.gwbadts.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
+  client:
+    build: ./client
+    container_name: client
+    ports:
+      - "3000:80"
