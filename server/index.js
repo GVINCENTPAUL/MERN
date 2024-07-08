@@ -22,7 +22,8 @@ async function StartServer(){
     app.listen(port,()=>{
         console.log(`Server live at ${port}`)})
 }
-function Testing(){
+function TESTING(){
     return 0;
 }
+TESTING();
 StartServer();
